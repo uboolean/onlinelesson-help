@@ -1,7 +1,7 @@
 //学习通挂课助手 By Boolean
 //开源协议MIT，使用请遵循相关协议
 //版本 V1.5
-//build 2022-1-2-22:00 
+//build 2022-1-4-15:00
 auto.waitFor();
 console.log("\u811a\u672c\u4f5c\u8005\u0042\u006f\u006f\u006c\u0065\u0061\u006e");
 var start = rawInput("请输入开始章节", "2.8");
