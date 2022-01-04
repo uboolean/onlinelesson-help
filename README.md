@@ -24,3 +24,5 @@
 2. 挂课期间手机调成息屏时长大于1分钟
 3. 挂课期间不能点击屏幕否则会导致异常（此问题后期想办法解决）
 4. 需要授予软件无障碍模式
+
+[更新说明](https://github.com/uboolean/onlinelessen-help/blob/main/update.md "更新说明")
