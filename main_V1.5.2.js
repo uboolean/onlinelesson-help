@@ -3,7 +3,7 @@
 //版本 V1.5
 //build 2022-1-4-12:00 
 auto.waitFor();
-launchAPP("学习通");
+launchApp("学习通");
 console.log("开始挂课");
 toast("开始挂课");
 console.log("\u811a\u672c\u4f5c\u8005\u0042\u006f\u006f\u006c\u0065\u0061\u006e");
