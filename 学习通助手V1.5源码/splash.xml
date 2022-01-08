@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<vertical>
+    <img w="*" h="0" layout_weight="1" src="http://www.iambin.top/img/hello.jpg" scaleType="fitXY"/>
+    <frame gravity="center" height="100">
+        <horizontal gravity="center">
+            <text text="遇见你真的很幸运" w="auto" h="auto" textSize="30" textColor="#212121"
+                textStyle="bold" layout_gravity="center" margin="16"/>
+        </horizontal>
+    </frame>
+</vertical>

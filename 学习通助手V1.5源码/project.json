@@ -1,0 +1,40 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "76D4A945-6",
+    "build_number": 6,
+    "build_time": 1641369139126,
+    "release": false
+  },
+  "encryptLevel": 3,
+  "useFeatures": [],
+  "icon": "res/icon.png",
+  "launchConfig": {
+    "displaySplash": true,
+    "hideLogs": true,
+    "splashLayoutXml": "splash.xml",
+    "splashText": "遇见你真的很幸运",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "学习通助手",
+  "optimization": {
+    "removeAccessibilityService": false,
+    "removeOpenCv": true,
+    "unusedResources": true
+  },
+  "packageName": "com.iambin.top.xuexiton",
+  "permissionConfig": {
+    "requestListOnStartup": [
+      "android.permission.WRITE_EXTERNAL_STORAGE"
+    ]
+  },
+  "scripts": {},
+  "signingConfig": {
+    "alias": "bin",
+    "keystore": "/storage/emulated/0/脚本/.keystore/boolean.jks",
+    "uuid": "83893a58-01d8-47e8-81c2-47bd81b2dc29"
+  },
+  "versionCode": 1,
+  "versionName": "1.5.0"
+}
