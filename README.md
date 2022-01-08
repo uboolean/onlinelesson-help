@@ -23,4 +23,6 @@
 2. 挂课期间手机调成息屏时长大于1分钟
 3. 需要授予软件无障碍模式
 
+## 开源协议MIT
+
 [更新说明](https://github.com/uboolean/onlinelessen-help/blob/main/update.md "更新说明")
