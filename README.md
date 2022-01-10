@@ -23,6 +23,10 @@
 2. 挂课期间手机调成息屏时长大于1分钟
 3. 需要授予软件无障碍模式
 
-## 开源协议MIT
+## 开源协议GPL V3.0
+- 使用禁止删除代码console.log("\u811a\u672c\u4f5c\u8005\u0042\u006f\u006f\u006c\u0065\u0061\u006e");
+
+## 反馈 
+- 脚本有bug请到http://www.iambin.top/mail.html反愧
 
 [更新说明](https://github.com/uboolean/onlinelessen-help/blob/main/update.md "更新说明")
