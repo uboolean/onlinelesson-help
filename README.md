@@ -29,4 +29,7 @@
 ## 反馈 
 - 脚本有bug请到http://www.iambin.top/mail.html 反馈
 
+## 已知严重bug
+- 部分题目选错后需要重新观看视频，导致遇到这类视频时会进入无限循环
+
 [更新说明](https://github.com/uboolean/onlinelessen-help/blob/main/update.md "更新说明")
