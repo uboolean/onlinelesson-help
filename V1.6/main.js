@@ -63,7 +63,7 @@ function judge(){
     //写入视频现在的时间
     write("/sdcard/boolean/com.iambin.top.xuexiton/time.bin",time_now);
     //写入结果，0说明没有重新观看，1说明已经重新观看
-    console.log(time_now+" "+time_timing);
+    
     write("/sdcard/boolean/com.iambin.top.xuexiton/.judge.bin",judge_t);
 }
 
