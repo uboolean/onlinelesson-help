@@ -8,13 +8,13 @@
     已知bug
         多选题，选错后需要重新观看题会卡循环（已修复）
 
- */
+*/
 auto.waitFor();
 launchApp("学习通");
 console.log("开始挂课");
 toast("开始挂课");
 console.log("\u811a\u672c\u4f5c\u8005\u0042\u006f\u006f\u006c\u0065\u0061\u006e");
-var start = rawInput("请输入开始章节", "10.1");
+var start = rawInput("请输入开始章节", "9.3");
 var end = rawInput("请输入结束章节", "10.5");
 toast("开始挂课从"+start+"到"+end);
 console.log("开始挂课从"+start+"到"+end);
@@ -39,7 +39,16 @@ function write(path,text){
     file.close();
 }
 
-
+//计算下一个选项
+function nextkey(t){
+    var key="A";
+    if(t=="B"){
+        key="C";
+    }else if(t=="C"){
+        key="D";
+    }
+    return key;
+}
 
 function judge(){
     var current=id("land_current_time").findOne(100);
@@ -82,9 +91,19 @@ function answer_again(){
         click("提交");
         click("继续");
         sleep(500);
+        var submit_again=text("提交").findOne(100);
+        var next_key=nextkey(key);
+    if (submit_again!=null){
+        click(next_key);
+        click("提交");
+        sleep(500);
+        console.log("选择"+key+"错误已选择"+next_key);
+        write("/sdcard/boolean/com.iambin.top.xuexiton/key.bin",next_key);
+    }
     //改变重新观看视频结果
     write("/sdcard/boolean/com.iambin.top.xuexiton/.judge.bin","0");
     sleep(6000);
+    judge();
 }
 
 
@@ -193,7 +212,7 @@ function practice(){
                     answer();
                 }                
                 if (result=="1"){
-                    answer_again;
+                    answer_again();
                 }
             }
         }
@@ -228,6 +247,7 @@ function main(){
     start_timing();
     for(var i = start;i <= end;i++){
         var id=unit+"."+String(i);
+        console.log(id);
         find_unit_text(id);
         toast("成功进入视频");
         console.log("成功进入"+id+"视频");
