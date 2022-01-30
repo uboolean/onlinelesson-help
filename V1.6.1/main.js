@@ -51,7 +51,7 @@ function judge(){
     }else{
         var text=current.text();
     }
-    text=test.split(":");
+    text=text.split(":");
     var minutes=text[0];
     minutes=60*(Number(minutes));
     var seconds=text[1];
