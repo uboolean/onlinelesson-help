@@ -52,9 +52,10 @@ function judge(){
     }else{
         var text=current.text();
     }
-    var minutes=text.substring(0,2);
+    text=test.split(":");
+    var minutes=text[0];
     minutes=60*(Number(minutes));
-    var seconds=text.substring(3);
+    var seconds=text[1];
     var time_now=Number(seconds)+minutes;
     var time_timing=read("/sdcard/boolean/com.iambin.top.xuexiton/time.bin");
     if (time_now+60<time_timing){
