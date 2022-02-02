@@ -15,7 +15,7 @@ console.log("开始挂课");
 toast("开始挂课");
 console.log("\u811a\u672c\u4f5c\u8005\u0042\u006f\u006f\u006c\u0065\u0061\u006e");
 var start = rawInput("请输入开始章节", "9.3");
-var end = rawInput("请输入结束章节", "10.5");
+var end = rawInput("请输入结束章节", "11.5");
 toast("开始挂课从"+start+"到"+end);
 console.log("开始挂课从"+start+"到"+end);
 start = start.split(".");
@@ -80,8 +80,6 @@ function judge(){
 //重新观看回答模块
 function answer_again(){
     var key=read("/sdcard/boolean/com.iambin.top.xuexiton/key.bin");
-    console.log(key);
-    console.log(typeof(key));
     var find_key=text(key).findOne(100);
     if (find_key==null){
         swipe(300,500,300,200,500);
@@ -92,10 +90,12 @@ function answer_again(){
         click("继续");
         sleep(500);
         var submit_again=text("提交").findOne(100);
+        var go=text("继续").findOne(100);
         var next_key=nextkey(key);
-    if (submit_again!=null){
+    if (submit_again!=null || go!=null){
         click(next_key);
         click("提交");
+        click("继续");
         sleep(500);
         console.log("选择"+key+"错误已选择"+next_key);
         write("/sdcard/boolean/com.iambin.top.xuexiton/key.bin",next_key);
